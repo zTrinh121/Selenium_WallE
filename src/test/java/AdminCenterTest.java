@@ -58,16 +58,16 @@ public class AdminCenterTest {
     public void testClickApproveBtnToast(){
         adminCenterPage.clickApproveBtn();
         String message = adminCenterPage.toastContent();
-        String actualResult = "Duyệt bài thành công";
-        Assertions.assertEquals("Duyệt bài thành công", actualResult, "The no result text should match the expected message");
+        String actualResult = "Duyệt trung tâm thành công";
+        Assertions.assertEquals("Duyệt trung tâm thành công", actualResult, "The no result text should match the expected message");
     }
 
     @Test
     public void testClickRejectBtnToast(){
         adminCenterPage.clickRejectBtn();
         String message = adminCenterPage.toastContent();
-        String actualResult = "Từ chối bài thành công";
-        Assertions.assertEquals("Từ chối bài thành công", actualResult, "The no result text should match the expected message");
+        String actualResult = "Từ chối trung tâm thành công";
+        Assertions.assertEquals("Từ chối trung tâm thành công", actualResult, "The no result text should match the expected message");
     }
 
     @AfterEach
